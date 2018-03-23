@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1691677.movie_application.search">
+    
+  <EditText
+      android:id="@+id/search"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:hint="Enter Movie Name"
+      />
+    <Button
+        android:id="@+id/moviesearch"
+        android:layout_width="80dp"
+        android:text="Search"
+        android:layout_height="50dp"
+        android:layout_below="@+id/search"
+        android:onClick="onClick" />
+  <ListView
+      android:id="@+id/listView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/moviesearch">
+
+  </ListView>
+
+
+</RelativeLayout>
